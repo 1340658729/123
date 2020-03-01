@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>橙果工作室成员管理系统</title>
+		<style type="text/css">
+		    body {margin: 0; padding:0;}
+			h1{color: rgb(0,153,255);text-align: center;font-family: canvas;margin:0;}
+			.dd{width: 400px; padding: 10px; background-color:#ffffff; opacity:0.6;}
+			input{background-color: whitesmoke;  font-size: 14px;}
+			.background{background-color:blue; font-size: 20px ;color: #F5F5F5;}
+			.color{background-color:pink;}
+			.linear{background-image:linear-gradient(to right,#00c9ff,#92fe9d); width:100%; height: 1000px;}
+		</style>
+		<script language="javascript">
+			
+			document.getElementById("demo").onmouseenter = function() {mouseEnter()};
+			document.getElementById("demo").onmouseleave = function() {mouseLeave()};
+			function mouseEnter() {
+			    document.getElementById("demo").style.color = "deeppink";
+			}
+			function mouseLeave() {
+			    document.getElementById("demo").style.color = "white";
+			}
+			
+			var odemo = document.getElementById('demo')
+			var ousername = document.getElementById('username')
+			var opassword = document.getElementById('password')
+			var username = "123"
+			var password = "123"
+			odemo.onclick = function(){
+			var ipt_username = ousername.value
+			var ipt_password = password.value
+			if(ipt_username === ? && ipt_password === ？){
+			window.location = 'https://www.baidu.com/';
+			}else{
+				alert('抱歉，用户名或密码错误。')
+			}}
+					
+		  </script>
+	</head>
+	<body >
+		<div class="body">
+		<div class="linear">
+			<br />
+		<h1>橙果工作室成员管理系统</h1>
+		<center>
+			<div class="dd">
+		<table border="0" width="300" height="150" >
+			<form method ="POST" action="https://www.baidu.com" name="f" >
+			<caption >
+				<img src="https://s2.ax1x.com/2019/09/04/nZbVmt.png" width="220" height="100">
+			</caption> 
+			<tr height="20">
+				<td>用户名：</td>
+			</tr>
+			<tr height="20">
+				<td><input type="text" class="color" id="username" value="Enter username" size="40" maxlength="20" </td>
+			</tr>
+			<tr height="20">
+			    <td>密  码：</td>
+			</tr>
+			<tr height="20">
+			    <td><input type="password" class="color" id="password" value="Enter password" size="40" maxlength="20"  /></td>
+	        </tr>
+			<tr height="20">
+				<td><input type="checkbox" name="zlogin" value="1">自动登录</td>
+			</tr>
+			  <td><input type="submit" class="background" id="demo" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" value="&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;登&emsp;录&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;" onClick="return validateLogin()" /></td>
+			</form>
+		</table>
+		</div>
+		</center>
+		</div></div>
+	</body>
+</html>
